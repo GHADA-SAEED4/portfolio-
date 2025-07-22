@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!---------------------------------------------------- Hero div ------------------------------------------------------------->
+    <div class="bg-[url('/assets/back-ground-2.png')] bg-no-repeat bg-cover bg-fixed w-full h-screen opacity-100">
+        <header>
+            <nav>
+                <ul class="flex justify-center text-2xl font-bold">
+                    <li class="relative group cursor-pointer px-4 py-2 text-black">
+                        <a href="./index.html"><span class="relative z-10  text-gray-50">Home</span></a>
+                        <span class="absolute left-0 bottom-0 h-[3px] w-0 bg-pink-700 transition-all duration-500 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group cursor-pointer px-4 py-2 text-black">
+                        <span class="relative z-10  text-gray-50" onclick="about()">About</span>
+                        <span class="absolute left-0 bottom-0 h-[3px] w-0 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group cursor-pointer px-4 py-2 text-black">
+                        <span class="relative z-10  text-gray-50" onclick="project()">Projects</span>
+                        <span class="absolute left-0 bottom-0 h-[3px] w-0 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group cursor-pointer px-4 py-2 text-black">
+                        <span class="relative z-10  text-gray-50" onclick="contact()">Contact</span>
+                        <span class="absolute left-0 bottom-0 h-[3px] w-0 bg-pink-700 transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+<!---------------------------------------------------- the circle div ------------------------------------------------------------->
+        <main>
+            <div class="w-[500px] h-[500px] rounded-full bg-white grid  justify-self-center mt-[40px] shadow-[10px_10px_100px_#be185d] ">
+                <img src="./assets/me-removebg-preview.png" class="rounded-full w-[500px] h-[500px]">
+                <h1 class="text-pink-700 font-bold text-4xl mt-[10px] ml-[120px]">GHADA SAEED</h1>
+                <h1 id="typingText" class="text-pink-700 font-bold text-4xl mt-[10px] ml-[40px]"></h1>
+            </div>
+        </main>
+    </div>
+<!---------------------------------------------------- About div ------------------------------------------------------------->
+    <div id="about">
+        <h1 class="text-pink-700 font-bold text-6xl flex justify-center mt-[20px]">About</h1>
+        <div class="flex">
+            <h2 class="text-pink-600 text-3xl ml-[50px] mr-[50px] mt-[50px] w-[800px]">
+                I'm a front-end developer passionate about crafting clean, responsive, and visually engaging web interfaces. I’m driven by creativity and inspired by the power of design — especially the way colors and layouts can shape user experience.
+                I work primarily with HTML, CSS, JavaScript, and Tailwind CSS, and I'm always exploring new tools and technologies to bring unique ideas to life. I love learning, tackling new challenges, and thinking outside the box.
+                In addition to coding, I have a strong interest in visual design using tools like Canva, and I value details and clarity in both code and design. I enjoy collaborating with others, sharing ideas, and constantly evolving as a developer.
+                My current focus is on expanding my skills with React and diving deeper into backend development to build complete, end-to-end web solutions.
+            </h2>
+            <img src="./assets/about-section.jpg" class="w-[500px] h-[500px] mt-[50px] ml-[100px]">
+        </div>
+    </div>
+<!---------------------------------------------------- projects div ------------------------------------------------------------->
+    <div id="project" class="bg-pink-700"> 
+    <h1 class="text-white font-bold text-6xl flex justify-center mt-[50px] pt-[20px]">Projects</h1>
+    <!---------------------------------------------------- div of top projects ------------------------------------------------------------->
+    <div class=" flex mt-[50px]">
+        <!---------------------------------------------------- Flower div top left ------------------------------------------------------------->
+        <div class="ml-[150px] mt-[50px] animate-pulse">
+            <div class="flex">
+                <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(0deg);"></div>
+                <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(90deg);"></div>
+            </div>
+            <div class="flex">
+                <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(270deg);"></div>
+                <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(180deg);"></div>
+            </div>
+        </div>
+        <!---------------------------------------------------- first project "The top of the pyramid" div ------------------------------------------------------------->
+        <div class="ml-[140px]">
+            <img src="./assets/Furniture.png" class=" w-[300px] h-[300px] rounded-full ml-[110px]">
+            <a href="#"><button class="ml-[50px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View live demo</button></a>
+            <a href="#"><button class="ml-[20px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View source code</button></a>
+        </div>
+        <!---------------------------------------------------- Flower div top right ------------------------------------------------------------->
+        <div class="ml-[200px] mt-[50px] animate-pulse">
+            <div class="flex">
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(0deg);"></div>
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(90deg);"></div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(270deg);"></div>
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(180deg);"></div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------- div of the bottom projects  ------------------------------------------------------------->
+            <div class="flex justify-center mt-[50px]">
+                <!---------------------------------------------------- the left project  ------------------------------------------------------------->
+                <div class="mr-[150px]">
+                    <img src="./assets/Alumni.png" class="w-[300px] h-[300px] rounded-full">
+                    <a href="#"><button class="ml-[-70px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View live demo</button></a>
+                    <a href="#"><button class="ml-[20px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View source code</button></a>
+                </div>
+                <!---------------------------------------------------- Flower div ------------------------------------------------------------->
+                <div class="mt-[50px] animate-pulse ml-[-50px]">
+                    <div class="flex">
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(0deg);"></div>
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(90deg);"></div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(270deg);"></div>
+                        <div class="w-[100px] h-[100px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(180deg);"></div>
+                    </div>
+                </div>
+                <!---------------------------------------------------- The right project ------------------------------------------------------------->
+                <div class="mb-10">
+                    <img src="./assets/Hospital.png" class="ml-[100px] w-[300px] h-[300px] rounded-full">
+                    <a href="#"><button class="ml-[50px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View live demo</button></a>
+                    <a href="#"><button class="ml-[20px] text-pink-500 bg-white w-[200px] h-[40px] rounded-xl mt-[20px] hover:bg-pink-500 hover:text-white">View source code</button></a>
+                </div>
+            </div>
+    </div>
+    <footer id="contact" class="w-full h-[500px] bg-pink-700 mt-10">
+    <div class="flex">
+        <div class="mt-[50px] animate-pulse ml-[100px]">
+            <div class="flex">
+                <div class="w-[200px] h-[200px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(0deg);"></div>
+                <div class="w-[200px] h-[200px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(90deg);"></div>
+            </div>
+            <div class="flex">
+                <div class="w-[200px] h-[200px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(270deg);"></div>
+                <div class="w-[200px] h-[200px] bg-white" style="border-radius:36% 64% 0% 100% / 30% 100% 0% 70%; transform: rotate(180deg);"></div>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-white font-bold text-[70px] ml-[150px] pt-[50px]"style="font-family: 'Poppins', sans-serif;">You can catch me at</h1>
+            <div class="ml-[200px] mt-[70px]">
+                <a href="mailto:ghadasaeedmohammedebedo@gmail.com"><i class="fas fa-envelope text-white text-[70px] ml-[100px] hover:text-pink-800 cursor-pointer hover:scale-125 duration-300"></i></a>
+                <a href="https://github.com/GHADA-SAEED4"><i class="fab fa-github text-white text-[70px] ml-[50px]  hover:text-pink-800 cursor-pointer hover:scale-125 duration-300"></i></a>
+                <a href="https://wa.me/201273286235"><i class="fab fa-whatsapp text-white text-[70px] ml-[50px]  hover:text-pink-800 cursor-pointer hover:scale-125 duration-300"></i></a>
+                <a href="https://www.linkedin.com/in/ghada-saeed"><i class="fab fa-linkedin text-white text-[70px] ml-[50px]  hover:text-pink-800 cursor-pointer hover:scale-125 duration-300"></i></a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+<!---------------------------------------------------- JS ------------------------------------------------------------->
+    <script>
+        const text = "FRONT-END DEVELOPER";
+        let index = 0;
+        const speed = 100;
+        let deleting = false;
+        
+        function typeWriter() {
+            const typingEl = document.getElementById("typingText");
+            
+            if (!deleting && index <= text.length) {
+                typingEl.textContent = text.substring(0, index);
+                index++;
+            } 
+            else if (deleting && index >= 0) {
+                typingEl.textContent = text.substring(0, index);
+                index--;
+            }
+            if (index === text.length) {
+            deleting = true;
+            setTimeout(typeWriter , 150); 
+            return;
+            } 
+            else if (index === 0 && deleting) {
+            deleting = false;
+            }
+            setTimeout(typeWriter, speed);
+        }
+        typeWriter();
+        // -------------------------------------------- links---------------------------------------------
+        function about(){
+            const aboutSection = document.getElementById("about");
+            if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+                }
+        function project(){
+            const aboutSection = document.getElementById("project");
+            if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+                }
+        function contact(){
+            const aboutSection = document.getElementById("contact");
+            if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+                }
+    </script>
+</body>
+</html>
